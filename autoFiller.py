@@ -24,15 +24,13 @@ choice = int(input("Do your sheet have columns mentioned? \nIf yes, press 1. Els
 if(choice == 1):
     start_idx = 1
 
-nums = [1, 2]
-
 for r in range(start_idx, sheet.nrows):
     
     formData = {}
     data = sheet.row_values(r)
     
     for i in range(len(formKeys)):
-        if(i in nums):
+        if(type(data[i]) == float):
             data[i] = int(data[i])        
         formData[formKeys[i]] = data[i]
 
