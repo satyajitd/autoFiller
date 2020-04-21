@@ -10,4 +10,4 @@ For this to work, the data in the xlsx file should be in correspondence to the G
  
    >`pip install -r requirements.txt` 
    
-   >`python autoFiller.py <google_form_link> <path_to_the_xlsx_file>`
+   >`python autoFiller.py <google_form_url> <path_to_the_xlsx_file>`
